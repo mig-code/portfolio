@@ -13,7 +13,7 @@ p,footer{
 body{
     display: flex;
     flex-direction: column;
-    max-width: max-content;
+    max-width: fit-content;
     margin: 0 auto;
     background-color: #fff;
 }
@@ -22,13 +22,14 @@ nav{
     justify-content: flex-end;
     background-color: #000;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
 }
 ul{
     background-color: #000;
 }
 li{
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 1em;
     margin: 1em;
     color:#fff;
     background-color: #000;
@@ -36,55 +37,60 @@ li{
 }
 
 .main-section{
-    margin-top: 4em;
-    padding:0 5em;
+    margin: 2em auto 0;
+    padding: 0 5em;
+    max-width: 900px;
     
 }
 
 .main-section>h1{
-    font-size: 4em;
+    font-size: 2em;
     margin:0;
     
 }
 .skills-section{
-    font-size: 1em;
+    font-size: 0.75em;
     margin-top: 0;
     
 
 }
 .skills-section>h3{
-  margin-top: 2em;
+  margin-top: 1em;
   text-align: end;
 
 }
 
 .about-section{
-    margin-top: 4em;
-    padding:0 3em;
+    margin-top: 2em;
     text-align: center;
     background-color: #2B2D42;
     color: #fff;
     opacity: 90%;
-    font-size: 1.3em;
+    font-size: 0.8em;
     line-height: 1.5;
-    padding: 2em 6em;
+    padding: 1em 3em;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     
+    
 
+}
+.about-section>p{
+    max-width: 900px;
+    margin: auto;
 }
 
 
 .projects-section{
-    margin: 4em 0;
-    padding:0 3em;
+    margin: 2em 0;
+    padding:0 1.5em;
     display: flex;
     flex-direction: column;
     align-items: center;
     
 }
 .projects-section>h3{
-    font-size: 3em;
-    margin-bottom: 1em;
+    font-size: 2em;
+    margin-bottom: 0.5em;
     
 }
 #projects-collection{
@@ -95,21 +101,32 @@ li{
 }
 
 .project{
-    background-color: #C1C3D7;
+    
     margin: 1.5em 1em;
-    padding: 1em;
+    padding: 2em;
     border: solid 3px black;
     border-radius: 4px;
-    width: auto;
-    height: 300px;
+    max-width: 450px;
+    height: auto;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     text-align: center;
 }
 
 .project>h4{
-    font-size: 3em;
+    font-size: 1.5em;
 }
 
+.project>img{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.project>img:hover{
+
+    box-shadow: rgba(0, 0, 0, 0.55) 10px 15px 25px;
+}
 
 
 footer{
@@ -119,3 +136,62 @@ footer{
     text-align: center;
     padding:1em;
 }
+
+   
+
+@media (min-width: 768px) {
+
+    li{
+        font-size: 1.5em;
+    
+    }
+    .main-section{
+        margin-top: 4em;
+        padding:0 5em;
+        
+    }
+
+    .main-section>h1{
+        font-size: 4em;
+        margin:0;
+        
+    }
+    .skills-section{
+        font-size: 1em;
+        margin-top: 0;
+        
+    
+    }
+    .skills-section>h3{
+      margin-top: 2em;
+      text-align: end;
+    
+    }
+    .about-section{
+        margin-top: 4em;
+        padding: 2em 6em;
+        font-size: 1.2em;
+    }
+
+    .projects-section{
+        margin: 4em 0;
+        padding:0 3em;
+        
+        
+    }
+    .projects-section>h3{
+        font-size: 3em;
+        margin-bottom: 1em;
+        
+    }
+
+    .project>h4{
+        font-size: 3em;
+    }
+    
+
+  
+
+
+}
+  
