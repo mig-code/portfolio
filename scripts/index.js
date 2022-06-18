@@ -29,7 +29,7 @@ function createProjectsHtml (){
         return `<div class="project">
                        <h4> ${item.name}</h4>
                        <p>${item.description}</p>
-                       <img src=${item.img}>
+                       <img src="${item.img}">
                        <p>${item.tech}</p>
                         
         </div>`
