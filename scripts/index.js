@@ -39,8 +39,10 @@ const projects=[{
 function createProjectsHtml (){
     const projectshtml = projects.map(item=>{
         return `<div class="project">
-                       <h4> ${item.name}</h4>
-                       <p>${item.description}</p>
+                       <h4 class="project-title"> ${item.name}</h4>
+                       <div class="project-description">
+                            <p>${item.description}</p>
+                        </div>
                        <img src="${item.img}">
                        <p>${item.tech}</p>
                        <div class="accordion">
