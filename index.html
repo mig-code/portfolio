@@ -1,87 +1,84 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Miguel P.Gómez | FrontEnd Developer based in Spain</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,900;1,400;1,700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src="https://kit.fontawesome.com/857c191664.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-   
-</head>
-<body>
-   <nav>
-       <ul>
-           <li>Projects </li>
-           <li>Contact</li>
-           <li>Hire Me!</li>
-       </ul>
-   </nav>
-  
-   <section class="main-section">
-  
-        <h1>👋 I'm Miguel,</br> a <span class="accent">Front End developer</span> based in Spain</h1> 
-        
-        <div class="skills-section">
-            <h3>MAIN SKILLS </h3>
-            <div class="skill-list">
-                <span class="Skill-label"> <i class="fa-brands fa-js fa-lg"> </i> &nbsp;JAVASCRIPT</span>
-                <span class="Skill-label"><i class="fa-brands fa-css3 fa-lg"></i>&nbsp;CSS3</span>
-                <span class="Skill-label"><i class="fa-brands fa-html5 fa-lg"></i> &nbsp; HTML5</span>
-                <span class="Skill-label"><i class="fa-brands fa-wordpress fa-lg"></i>&nbsp;WORDPRESS</span>
-            </div>
-            
-        </div>   
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,400;0,900;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/857c191664.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
 
+  <body>
+    <nav class="nav-top">
+      <ul class="nav-top__ul">
+        <li class="nav-top__li"><a href="#projects-scroll">Projects</a></li>
+        <li class="nav-top__li"><a href="#contact-scroll">Contact</a></li>
+        <li class="nav-top__li"><a href="#hire-me-scroll">Hire Me </a></li>
+      </ul>
+    </nav>
 
+    <header class="header">
+      <h1 class="header__h1">
+        👋 I'm Miguel,<br />
+        a <span class="header__h1--accent">Front End developer</span> based in
+        Spain
+      </h1>
+
+      <div class="skills">
+        <h3 class="skills__h3">MAIN SKILLS</h3>
+        <div class="skills__list">
+          <span class="skills__list--label">
+            <i class="fa-brands fa-js fa-lg"> </i> &nbsp;JAVASCRIPT</span
+          >
+          <span class="skills__list--label"
+            ><i class="fa-brands fa-css3 fa-lg"></i>&nbsp;CSS3</span
+          >
+          <span class="skills__list--label"
+            ><i class="fa-brands fa-html5 fa-lg"></i> &nbsp; HTML5</span
+          >
+          <span class="skills__list--label"
+            ><i class="fa-brands fa-wordpress fa-lg"></i>&nbsp;WORDPRESS</span
+          >
+        </div>
+      </div>
+    </header>
+
+    <div class="about">
+      <div class="about--container">
+        <h2 class="about__title">About</h2>
+        <p class="about__text">
+          Desarrollador web FrontEnd con experiencia en Javascript, CSS, HTML y
+          WordPress Desde los 13 años he estado creando y posicionando páginas
+          webs tanto para proyectos propios como para terceros.
+        </p>
+      </div>
+    </div>
+
+    <section class="projects-section" id="projects-scroll">
+      <h3 class="projects-section__title">Latest projects</h3>
+      <div class="project-section__container">
+        <div id="projects-collection"></div>
+      </div>
     </section>
 
-    <section class="about-section">
-        
-        <div class="about-section-text"> 
-            <h2>About</h2>
-            <p>Desarrollador web FrontEnd con experiencia en Javascript, CSS, HTML y WordPress
-
-                Desde los 13 años he estado creando y posicionando páginas webs tanto para proyectos propios como para terceros.
-                
-            </p>
-            
-        </div>
-            
-
-
+    <section class="contact" id="contact-scroll">
+      <h2 class="contact__title">Contact</h2>
+      <div class="contact--container">
+        <p class="contact__text">
+          You can reach me here twitter linkedin email
+        </p>
+      </div>
     </section>
+    <footer class="footer">Desgined by mig-code</footer>
 
-    <section class="projects-section">
-            <h3>Latest projects</h3>
-        <div class="project-flex-container">
-            <div id="projects-collection" >
-            </div>  
-        </div>
-            
-     </section>
-
-     <section class="about-section">
-        <h2>Contact</h2>
-        <div class="about-section-text"> 
-            <p>You can reach me here
-                twitter
-                linkedin
-                email
-            </p>
-            
-        </div>
-        </section>
-     <footer>
-         Desgined by mig-code
-         
-     </footer>
-
-
-<script src="./scripts/index.js"></script>
-
-</body>
-
+    <script src="./scripts/index.js"></script>
+  </body>
 </html>
-
